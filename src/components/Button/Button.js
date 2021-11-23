@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Button.module.css';
 import PropTypes from 'prop-types';
 
-function Button({ title }) {
+export default function Button({ title }) {
   return (
     <button type="submit" className={s.button}>
       {title}
@@ -11,7 +11,5 @@ function Button({ title }) {
 }
 
 Button.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
-
-export default Button;

@@ -9,6 +9,7 @@ function Filter({ value, onChange }) {
       <input
         className={s.input}
         type="text"
+        name="filter"
         value={value}
         onChange={onChange}
       />
@@ -17,8 +18,8 @@ function Filter({ value, onChange }) {
 }
 
 Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 export default Filter;
